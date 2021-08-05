@@ -1,0 +1,98 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    font-size: 64px;
+    line-height: 30px;
+    color:#ffffff;
+}
+header{
+    background-color: #2d25a0;
+    padding-bottom: 35px;
+}
+.container{
+    width:1000px;
+    margin:auto;
+    
+}
+.header-top-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top:42px;
+}
+/* menu area start */
+.menu-area nav ul{
+    display: flex;
+   padding:0;
+    
+}
+.menu-area nav ul li{
+    list-style: none;
+    margin-right: 30px;
+    padding:0;
+    
+}
+.menu-area nav ul li a{
+    text-decoration: none;
+    color:#ffffff;
+    font-weight: 500;
+    font-size:16px;
+}
+/* menu area end */
+/* login area start */
+.button a{
+    text-decoration: none;
+    padding: 8px 25px;
+    background-color: #E02C6D;
+    color:#ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    transition: .5s;
+    border-radius: 10px;
+}
+.button a:hover{
+    background-color: lightyellow;
+    color:mediumblue
+}
+/* login area end */
+/* header bottom area start */
+.header-bottom-area{
+    display: flex;
+    margin-top:50px;
+}
+.half-width{
+    width:50%;
+    
+}
+.half-width img{
+    width:100%;
+}
+.banner-pic:hover {
+    transform:scale(1.03);
+    transition:transform 1s ease;
+}
+
+
+/* header bottom area end */
+/* Player area start */
+.players{
+    margin-top:70px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.players .player{
+    width:280px;
+    height:420px;
+    padding:15px;
+    box-shadow: .5px .5px 30px lightgray;
+}
+.players .player img{
+    width:100%;
+}
+.player h2{
+    margin:8px 0;
+}
+/* Player area end */
+

@@ -11,36 +11,16 @@ header{
     padding-bottom: 35px;
 }
 .container{
-    width:1000px;
+    width:85%;
     margin:auto;
     
 }
 .header-top-area{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    
     padding-top:42px;
 }
-/* menu area start */
-.menu-area nav ul{
-    display: flex;
-   padding:0;
-    
-}
-.menu-area nav ul li{
-    list-style: none;
-    margin-right: 30px;
-    padding:0;
-    
-}
-.menu-area nav ul li a{
-    text-decoration: none;
-    color:#ffffff;
-    font-weight: 500;
-    font-size:16px;
-}
-/* menu area end */
-/* login area start */
+
+/* Button area start */
 .button a{
     text-decoration: none;
     padding: 8px 25px;
@@ -55,7 +35,7 @@ header{
     background-color: lightyellow;
     color:mediumblue
 }
-/* login area end */
+/* Button area end */
 /* header bottom area start */
 .header-bottom-area{
     display: flex;
@@ -67,20 +47,28 @@ header{
 }
 .half-width img{
     width:100%;
+    
 }
-.banner-pic:hover {
+.banner-img{
+    transition: .5s;
+}
+
+.banner-img:hover {
     transform:scale(1.03);
-    transition:transform 1s ease;
+    
+    
 }
 
 
 /* header bottom area end */
 /* Player area start */
 .players{
-    margin-top:70px;
+    margin:70px 0;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 20px;
+    justify-items: center;
+    
 }
 .players .player{
     width:280px;
@@ -95,4 +83,131 @@ header{
     margin:8px 0;
 }
 /* Player area end */
+/* top player area start */
+.top-players{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.top-player-heading{
+    font-size: 40px;
+    text-align: center;
+}
+.top-player{
+    height: 270px;
+    position:relative;
+    overflow: hidden;
+    margin:1%;
+    
+}
+.top-player img{
+    width: 100%;
+}
+.player-info{
+    position:absolute;
+    top:0;
+    display: none;
+    
+}
+.top-player:hover .player-info{
+    display: block;
+    color:#ffffff;
+    padding: 5px;
+    
+}
+.player-photo{
+    transition: 1s;
+}
+.top-player:hover .player-photo{
+    transform: scale(1.1);
+}
+/* top player area end */
+/* Player details area start */
+.footer-top{
+    background-color: rgb(95, 92, 92);
+}
+.player-details{
+    
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
 
+.player-details h3{
+    font-size:23px;
+    color:#ffffff;
+}
+.player-details p{
+    font-size:15px;
+    color:rgb(207, 203, 203);
+}
+/* Player details area end */
+/* footer bottom area */
+.footer-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:50px;
+}
+.footer-logo{
+    width:50%;
+}
+.footer-logo img{
+    width:100%;
+}
+.social-icon a{
+    font-size: 25px;
+    background-color: rgba(92, 92, 92, 0.253);
+    border-radius: 50%;
+    padding: 5px 10px;
+    margin:15px;
+    color:black;
+}
+.copyright-section p{
+    font-size: 14px;
+}
+
+
+/* =============================responsive website============================ */
+@media only screen and (max-width: 600px) {
+    h1{
+        font-size:50px;
+    }
+    .header-bottom-area{
+        flex-direction: column;
+    }
+    .half-width{
+        width:100%;
+        margin-top:50px;
+    }
+    .banner-img img{
+        width:90%;
+    }
+    .players{
+        
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 20px;
+        margin:auto;
+        justify-items: center;
+        
+    }
+
+    .top-player-heading{
+        font-size: 30px;
+        text-align: left;
+    }
+    .top-players{
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .player-details{
+        justify-items: center;
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+        
+
+    }
+    .info{
+        margin-top:30px;
+    }
+    
+  }
